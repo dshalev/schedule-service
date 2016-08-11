@@ -13,7 +13,7 @@ var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 // connect to MongoDB
 
-mongoose.connect('mongodb://localhost/scheduler-service').then(() =>  console.log('connection succesful')).catch((err) => console.error(err));
+mongoose.connect('mongodb://ro:Kiefsuds@54.175.3.30:27017/scheduleevents').then(() =>  console.log('connection succesful')).catch((err) => console.error(err));
 
 var app = express();
 
